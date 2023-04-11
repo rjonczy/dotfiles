@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/rjonczy/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  nerdtree = {
+    loaded = true,
+    path = "/home/rjonczy/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/scrooloose/nerdtree"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/rjonczy/.local/share/nvim/site/pack/packer/start/nvim-cmp",

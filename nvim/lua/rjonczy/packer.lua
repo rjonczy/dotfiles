@@ -66,6 +66,10 @@ return require('packer').startup(function(use)
   }
 }
 
+use {
+    'scrooloose/nerdtree'
+}
+
 
 
 end)
