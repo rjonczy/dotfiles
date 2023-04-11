@@ -6,3 +6,6 @@
 
 # whitelist everything in ./nvim/
 !nvim/**
+
+# whitelist everything in ./kitty/
+!kitty/**
