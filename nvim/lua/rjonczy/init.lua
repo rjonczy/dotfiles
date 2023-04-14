@@ -1,3 +1,3 @@
 require("rjonczy.options")
-require("rjonczy.remap")
+require("rjonczy.keymaps")
 require("rjonczy.plugins")
