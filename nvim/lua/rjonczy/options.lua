@@ -44,7 +44,6 @@ vim.opt.showtabline = 2                         -- always show tabs
 vim.opt.smartcase = true                        -- smart case
 vim.opt.splitbelow = true                       -- force all horizontal splits to go below current window
 vim.opt.splitright = true                       -- force all vertical splits to go to the right of current window
--- vim.opt.termguicolors = true                    -- set term gui colors (most terminals support this)
 vim.opt.timeoutlen = 1000                       -- time to wait for a mapped sequence to complete (in milliseconds)
 vim.opt.writebackup = false                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 vim.opt.cursorline = true                       -- highlight the current line

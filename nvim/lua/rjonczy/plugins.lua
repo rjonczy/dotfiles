@@ -45,8 +45,9 @@ packer.init {
 return require('packer').startup(function(use)
   -- My plugins comes below --
 
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+  use 'wbthomason/packer.nvim' -- Packer can manage itself 
+  use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"  -- Useful lua functions used ny lots of plugins
 
   -- telescope
   use {
@@ -62,7 +63,11 @@ return require('packer').startup(function(use)
   -- use { "catppuccin/nvim", as = "catppuccin" }
   -- vim.cmd.colorscheme "catppuccin"
 
-  use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+  -- use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+
+  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use "lunarvim/darkplus.nvim"
+  use 'folke/tokyonight.nvim'
 
 
   -- treesitter
@@ -75,6 +80,7 @@ return require('packer').startup(function(use)
 	  'nvim-treesitter/playground'
   }
 
+  -- pretty cool plugin from theprimeagen to switch between bookmarked files
   use {
 	  'theprimeagen/harpoon'
   }
