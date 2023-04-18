@@ -124,15 +124,28 @@ return require('packer').startup(function(use)
       {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
       -- Autocompletion
-      {'hrsh7th/nvim-cmp'},     -- Required
-      {'hrsh7th/cmp-nvim-lsp'}, -- Required
-      {'L3MON4D3/LuaSnip'},     -- Required
+      -- {'hrsh7th/nvim-cmp'},     -- Required
+      -- {'hrsh7th/cmp-nvim-lsp'}, -- Required
+      -- {'L3MON4D3/LuaSnip'},     -- Required
       }
   }
 
-  use {
-      'scrooloose/nerdtree'
-  }
+  -- cmp plugins
+  use "hrsh7th/nvim-cmp"         -- The completion plugin
+  use "hrsh7th/cmp-buffer"       -- buffer completions
+  use "hrsh7th/cmp-path"         -- path completions
+  use "hrsh7th/cmp-cmdline"      -- cmdline completions
+  use "hrsh7th/cmp-nvim-lsp"     -- required by lsp
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+
+  -- snippets
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+
+  -- use {
+  --     'scrooloose/nerdtree'
+  -- }
 
   -- Useful plugin to show you pending keybinds.
   use {
@@ -146,6 +159,12 @@ return require('packer').startup(function(use)
               -- refer to the configuration section below
           }
       end
+  }
+
+  -- status bar/line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
 
