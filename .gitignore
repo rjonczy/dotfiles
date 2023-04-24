@@ -7,5 +7,8 @@
 # whitelist everything in ./nvim/
 !nvim/**
 
+# whitelist everything in ./alacritty/
+!alacritty/**
+
 # whitelist everything in ./kitty/
-!kitty/**
+!kitty/*
