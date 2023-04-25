@@ -8,15 +8,15 @@ My selected .dotfiles
 ### Swaywm
 
 Legend:
-- <leader> - Windows key
+- \<leader\> - Windows key
 - S - Shift key 
 - C - Control key 
 
 | Keymap | Action |
 |---|---|
-| <leader>ENTER | Opens new terminal  |
-| <leader>Sc | Reloads Sway config  |
-| <leader>Se | Exits Sway |
+| \<leader\>ENTER | Opens new terminal  |
+| \<leader\>Sc | Reloads Sway config  |
+| \<leader\>Se | Exits Sway |
 
 ### Tmux
 
