@@ -59,5 +59,12 @@ Keymaps within `tmux`
 | \<leader\>\-l  | resize current pane  |
 | \<leader\>m  | maximise pane |
 
-### VIM
+### (Neo)VIM
 
+Keymaps within `nvim`
+| Keymap | Action |
+|---|---|
+| C\-h | jump to left window |
+| C\-j | jump to down window |
+| C\-k | jump to up window |
+| C\-l | jump to righ window |
