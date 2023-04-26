@@ -57,7 +57,11 @@ Keymaps within `tmux`
 | \<leader\>\-j  | resize current pane |
 | \<leader\>\-k  | resize current pane |
 | \<leader\>\-l  | resize current pane  |
-| \<leader\>m  | maximise pane |
+| \<leader\>\-m  | maximise pane |
+| \<leader\>\-c  | create new window |
+| \<leader\>\-0  | navigate to window 0 |
+| \<leader\>\-1  | navigate to window 1 |
+| \<leader\>,  | rename window |
 
 ### (Neo)VIM
 
