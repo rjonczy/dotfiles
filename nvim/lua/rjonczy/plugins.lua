@@ -69,6 +69,8 @@ return require('packer').startup(function(use)
   use "lunarvim/darkplus.nvim"
   use 'folke/tokyonight.nvim'
 
+  use 'christoomey/vim-tmux-navigator'
+
 
   -- treesitter
   use {
