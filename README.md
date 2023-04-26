@@ -17,8 +17,38 @@ Legend:
 | \<leader\>ENTER | Opens new terminal  |
 | \<leader\>Sc | Reloads Sway config  |
 | \<leader\>Se | Exits Sway |
+| \<leader\>d | App launcher|
+
+Workspaces
+
+| Keymap | Action |
+|---|---|
+| \<leader\>1 | Jump to workspace 1 |
+| \<leader\>2 | Jump to workspace 2 |
+| \<leader\>n | Jump to workspace n |
+| \<leader\>0 | Jump to workspace 10 |
+| \<leader\>- | Jump to workspace 11 |
+| \<leader\>= | Jump to workspace 12 |
 
 ### Tmux
+
+Legend:
+- \<leader\> - C-a 
+
+Commands
+| Command | Action |
+|---|---|
+| tmux new -s session1 | creates new session named: session1 |
+| tmux detach | detach from current session |
+| tmux attach -t session1 | attach to specific session |
+| tmux ls | list sessions |
+
+Keymaps within `tmux`
+| Keymap | Action |
+|---|---|
+| \<leader\>s | show window with sessions |
+| \<leader\>| | split into 2 panes vertically |
+| \<leader\>- | split into 2 panes horizontally |
 
 ### VIM
 
