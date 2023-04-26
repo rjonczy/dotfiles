@@ -38,17 +38,17 @@ Legend:
 Commands
 | Command | Action |
 |---|---|
-| tmux new -s session1 | creates new session named: session1 |
-| tmux detach | detach from current session |
-| tmux attach -t session1 | attach to specific session |
-| tmux ls | list sessions |
+| `tmux new -s session1` | creates new session named: session1 |
+| `tmux detach` | detach from current session |
+| `tmux attach -t session1` | attach to specific session |
+| `tmux ls` | list sessions |
 
 Keymaps within `tmux`
 | Keymap | Action |
 |---|---|
-| \<leader\>s | show window with sessions |
-| \<leader\>| | split into 2 panes vertically |
-| \<leader\>- | split into 2 panes horizontally |
+| \<leader\>s  | show window with sessions |
+| \<leader\>\| | split into 2 panes vertically |
+| \<leader\>-  | split into 2 panes horizontally |
 
 ### VIM
 
