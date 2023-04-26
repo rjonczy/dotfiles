@@ -46,8 +46,8 @@ Commands
 Keymaps within `tmux`
 | Keymap | Action |
 |---|---|
-| \<leader\>s  | show window with sessions |
-| \<leader\>\| | split window into 2 panes vertically |
+| \<leader\>\-s  | show sessions |
+| \<leader\>\-\| | split window into 2 panes vertically |
 | \<leader\>-  | split window into 2 panes horizontally |
 | C\-h | jump to left pane |
 | C\-j | jump to down pane |
@@ -59,9 +59,12 @@ Keymaps within `tmux`
 | \<leader\>\-l  | resize current pane  |
 | \<leader\>\-m  | maximise pane |
 | \<leader\>\-c  | create new window |
-| \<leader\>\-0  | navigate to window 0 |
-| \<leader\>\-1  | navigate to window 1 |
-| \<leader\>,  | rename window |
+| \<leader\>\-0  | navigate to window nr 0 |
+| \<leader\>\-1  | navigate to window nr 1 |
+| \<leader\>\-p  | navigate to previous window |
+| \<leader\>\-n  | navigate to next window |
+| \<leader\>\-,  | rename window |
+| \<leader\>\-w  | show windows |
 
 ### (Neo)VIM
 
