@@ -49,10 +49,14 @@ Keymaps within `tmux`
 | \<leader\>s  | show window with sessions |
 | \<leader\>\| | split into 2 panes vertically |
 | \<leader\>-  | split into 2 panes horizontally |
-| \<leader\>h  | move to left pane |
-| \<leader\>j  | move to down pane |
-| \<leader\>k  | move to up pane |
-| \<leader\>l  | move to righ pane |
+| C\-h | jump to left pane |
+| C\-j | jump to down pane |
+| C\-k | jump to up pane |
+| C\-l | jump to righ pane |
+| \<leader\>\-h  | resize current pane |
+| \<leader\>\-j  | resize current pane |
+| \<leader\>\-k  | resize current pane |
+| \<leader\>\-l  | resize current pane  |
 | \<leader\>m  | maximise pane |
 
 ### VIM
