@@ -49,6 +49,11 @@ Keymaps within `tmux`
 | \<leader\>s  | show window with sessions |
 | \<leader\>\| | split into 2 panes vertically |
 | \<leader\>-  | split into 2 panes horizontally |
+| \<leader\>h  | move to left pane |
+| \<leader\>j  | move to down pane |
+| \<leader\>k  | move to up pane |
+| \<leader\>l  | move to righ pane |
+| \<leader\>m  | maximise pane |
 
 ### VIM
 
