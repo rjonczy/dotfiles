@@ -47,8 +47,8 @@ Keymaps within `tmux`
 | Keymap | Action |
 |---|---|
 | \<leader\>s  | show window with sessions |
-| \<leader\>\| | split into 2 panes vertically |
-| \<leader\>-  | split into 2 panes horizontally |
+| \<leader\>\| | split window into 2 panes vertically |
+| \<leader\>-  | split window into 2 panes horizontally |
 | C\-h | jump to left pane |
 | C\-j | jump to down pane |
 | C\-k | jump to up pane |
