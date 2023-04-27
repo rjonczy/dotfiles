@@ -1,4 +1,4 @@
-<h1 align="center"> ✨Robert's dotfiles + keymaps ✨ </h1>
+<h1 align="center"> ✨ Robert's dotfiles + keymaps ✨ </h1>
 
 ## Robert's dotfiles
 My selected .dotfiles
@@ -38,33 +38,36 @@ Legend:
 Commands
 | Command | Action |
 |---|---|
-| `tmux new -s session1` | creates new session named: session1 |
+| `tmux new -s session1` | creates new session session1 |
+| `tmux new -s session1 -d ` | creates new session session1 and detaches |
 | `tmux detach` | detach from current session |
 | `tmux attach -t session1` | attach to specific session |
 | `tmux ls` | list sessions |
+| `tmux kill-server` | kills all sessions (and server) gracefully |
 
 Keymaps within `tmux`
-| Keymap | Action |
-|---|---|
-| \<leader\>\-s  | show sessions |
-| \<leader\>\-\| | split window into 2 panes vertically |
-| \<leader\>-  | split window into 2 panes horizontally |
-| C\-h | jump to left pane |
-| C\-j | jump to down pane |
-| C\-k | jump to up pane |
-| C\-l | jump to righ pane |
-| \<leader\>\-h  | resize current pane |
-| \<leader\>\-j  | resize current pane |
-| \<leader\>\-k  | resize current pane |
-| \<leader\>\-l  | resize current pane  |
-| \<leader\>\-m  | maximise pane |
-| \<leader\>\-c  | create new window |
-| \<leader\>\-0  | navigate to window nr 0 |
-| \<leader\>\-1  | navigate to window nr 1 |
-| \<leader\>\-p  | navigate to previous window |
-| \<leader\>\-n  | navigate to next window |
-| \<leader\>\-,  | rename window |
-| \<leader\>\-w  | show windows |
+| Keymap | Action | Topic |
+|---|---|---|
+| \<leader\>\-s  | show sessions | Sessions |
+| \<leader\>\-d  | detach | Sessions |
+| \<leader\>\-\| | split window into 2 panes vertically | Panes |
+| \<leader\>-  | split window into 2 panes horizontally | Panes |
+| C\-h | jump to left pane | Panes |
+| C\-j | jump to down pane | Panes |
+| C\-k | jump to up pane | Panes |
+| C\-l | jump to righ pane | Panes |
+| \<leader\>\-h  | resize current pane | Panes |
+| \<leader\>\-j  | resize current pane | Panes |
+| \<leader\>\-k  | resize current pane | Panes |
+| \<leader\>\-l  | resize current pane  | Panes |
+| \<leader\>\-m  | maximise pane | Panes |
+| \<leader\>\-c  | create new window | Windows |
+| \<leader\>\-0  | navigate to window nr 0 | Windows |
+| \<leader\>\-1  | navigate to window nr 1 | Windows |
+| \<leader\>\-p  | navigate to previous window | Windows |
+| \<leader\>\-n  | navigate to next window | Windows |
+| \<leader\>\-,  | rename window | Windows |
+| \<leader\>\-w  | show windows | Windows |
 
 ### (Neo)VIM
 
