@@ -49,6 +49,11 @@ return require('packer').startup(function(use)
   use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"  -- Useful lua functions used ny lots of plugins
 
+
+  use {
+    'stevearc/oil.nvim'
+  }
+
   -- telescope
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
