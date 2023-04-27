@@ -4,9 +4,39 @@ font:
 
 window:
   opacity: 1.0
+  # window padding (change requires restart)
+  padding:
+    x: 2
+    y: 2
+  # spread additional padding evenly around the terminal content
+  dynamic_padding: true
+  # window decoarations
+  # - full: borders and title bar
+  # - none: neither borders nor title bar
+  # - (macos) transparent: title bar, transparent background, and title bar buttons
+  # - (macos) buttonless: title bar transparent background, but no title bar buttons
+  decorations: full
+  # dynamically set the window title
+  dynamic_title: true
+  # Startup mode
+  # - Windowed
+  # - Maximized
+  # - Fullscreen
+  # - SimpleFullscreen (macos only)
+  startup_mode: Windowed
 
-import:
-  - ~/.config/alacritty/themes/themes/terminal_app.yaml
+cursor:
+  # Cursor style
+  # - ▇ Block
+  # - _ Underline
+  # - | Beam
+  style: Block
+  # render the cursor as a hollow box when window is not focused
+  unfocused_hollow: true
+
+# automatically reload config upon change
+live_config_reload: true
+
 colors:
   name: Belge
   author: ""
