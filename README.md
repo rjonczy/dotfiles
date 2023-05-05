@@ -68,6 +68,8 @@ Keymaps within `tmux`
 | \<leader\>\-n  | navigate to next window | Windows |
 | \<leader\>\-,  | rename window | Windows |
 | \<leader\>\-w  | show windows | Windows |
+| \<leader\>\-?  | show all keybindings | help |
+| \<leader\>\-:  | enter the command line to type commands (use tab for completition)| commands |
 
 ### (Neo)VIM
 
