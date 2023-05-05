@@ -49,6 +49,7 @@ Keymaps within `tmux`
 | Keymap | Action | Topic |
 |---|---|---|
 | \<leader\>\-s  | show sessions | Sessions |
+| :new  | create new session | Sessions |
 | \<leader\>\-d  | detach | Sessions |
 | \<leader\>\-\| | split window into 2 panes vertically | Panes |
 | \<leader\>-  | split window into 2 panes horizontally | Panes |
