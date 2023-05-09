@@ -44,13 +44,16 @@ Commands
 | `tmux attach -t session1` | attach to specific session |
 | `tmux ls` | list sessions |
 | `tmux kill-server` | kills all sessions (and server) gracefully |
+| `tmux kill-session -t session1` | kills session session1 |
+| `tmux kill-session -a` | kills all sessions |
 
 Keymaps within `tmux`
 | Keymap | Action | Topic |
 |---|---|---|
 | \<leader\>\-s  | show sessions | Sessions |
 | :new  | create new session | Sessions |
-| \<leader\>\-d  | detach | Sessions |
+| \<leader\>\-$  | rename session | Sessions |
+| \<leader\>\-d  | detach from session | Sessions |
 | \<leader\>\-\| | split window into 2 panes vertically | Panes |
 | \<leader\>-  | split window into 2 panes horizontally | Panes |
 | C\-h | jump to left pane | Panes |
