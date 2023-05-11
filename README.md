@@ -83,4 +83,9 @@ Keymaps within `nvim`
 | C\-h | jump to left window |
 | C\-j | jump to down window |
 | C\-k | jump to up window |
-| C\-l | jump to righ window |
+| C\-(left/right/up/down) | resize ewindow |
+| C\-w q | close window |
+| C\-w o | close all other windows |
+| C\-w _ | max out height of window |
+| C\-w \| | max out weight of window |
+
