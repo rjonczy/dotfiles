@@ -10,7 +10,6 @@
 # whitelist everything in ./tmux/
 !tmux/tmux.conf
 
-
 # whitelist everything in ./alacritty/
 !alacritty/**
 
