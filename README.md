@@ -80,6 +80,11 @@ Keymaps within `tmux`
 Keymaps within `nvim`
 | Keymap | Action |
 |---|---|
+| v | enter Visual mode and start selection |
+| V | select current line |
+| C-q | enter Visual Block |
+| C-q I | enter Visual Block and Insert |
+| C-q I (comment symbol) Esc | multiline comments |
 | C\-h | jump to left window |
 | C\-j | jump to down window |
 | C\-k | jump to up window |
