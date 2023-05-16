@@ -43,15 +43,31 @@ packer.init {
 -- vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- My plugins comes below --
 
+  -- My plugins comes below --
   use 'wbthomason/packer.nvim' -- Packer can manage itself 
   use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"  -- Useful lua functions used ny lots of plugins
 
-
+  -- file explorer
   use {
-    'stevearc/oil.nvim'
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    }
+  }
+
+  -- TODO comments
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
   }
 
   -- telescope
@@ -60,6 +76,11 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  -- toggleterm
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
 
   -- color schemes
   -- use({ 'rose-pine/neovim', as = 'rose-pine' })
@@ -97,23 +118,12 @@ return require('packer').startup(function(use)
   }
 
   use {
-	'tpope/vim-fugitive'
+    'tpope/vim-fugitive'
   }
 
 
   use {
-      'lewis6991/gitsigns.nvim',
-      -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
-      opts = {
-          -- See `:help gitsigns.txt`
-          signs = {
-              add = { text = '+' },
-              change = { text = '~' },
-              delete = { text = '_' },
-              topdelete = { text = '‾' },
-              changedelete = { text = '~' },
-          },
-      },
+    'lewis6991/gitsigns.nvim'
   }
 
   use {
@@ -150,10 +160,6 @@ return require('packer').startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
 
-  -- use {
-  --     'scrooloose/nerdtree'
-  -- }
-
   -- Useful plugin to show you pending keybinds.
   use {
       "folke/which-key.nvim",
@@ -168,11 +174,12 @@ return require('packer').startup(function(use)
       end
   }
 
-  -- status bar/line
+  -- status bar/line --
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  -- status bar/line --
 
 
   -- Automatically set up your configuration after cloning packer.nvim
