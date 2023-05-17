@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Packer can manage itself 
   use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"  -- Useful lua functions used ny lots of plugins
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- file explorer
   use {
@@ -139,11 +140,6 @@ return require('packer').startup(function(use)
           end,
       },
       {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
-      -- Autocompletion
-      -- {'hrsh7th/nvim-cmp'},     -- Required
-      -- {'hrsh7th/cmp-nvim-lsp'}, -- Required
-      -- {'L3MON4D3/LuaSnip'},     -- Required
       }
   }
 
