@@ -50,6 +50,16 @@ return require('packer').startup(function(use)
   use "nvim-lua/plenary.nvim"  -- Useful lua functions used ny lots of plugins
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
+  -- autopairs (integrates with cmp and treesitter)
+  use {
+    "windwp/nvim-autopairs",
+    config = function()
+      require("nvim-autopairs").setup {
+
+      }
+    end
+  }
+
   -- file explorer
   use {
     'nvim-tree/nvim-tree.lua',
