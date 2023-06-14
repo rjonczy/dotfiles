@@ -94,13 +94,12 @@ return require('packer').startup(function(use)
   end}
 
   -- color schemes
-  -- use({ 'rose-pine/neovim', as = 'rose-pine' })
-  --  vim.cmd('colorscheme rose-pine')
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
 
   -- use { "catppuccin/nvim", as = "catppuccin" }
   -- vim.cmd.colorscheme "catppuccin"
 
-  -- use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+  use {'morhetz/gruvbox' }
 
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
@@ -137,21 +136,11 @@ return require('packer').startup(function(use)
     'lewis6991/gitsigns.nvim'
   }
 
-  use {
-      'VonHeikemen/lsp-zero.nvim',
-      branch = 'v2.x',
-      requires = {
-          -- LSP Support
-          {'neovim/nvim-lspconfig'},             -- Required
-          {                                      -- Optional
-          'williamboman/mason.nvim',
-          run = function()
-              pcall(vim.cmd, 'MasonUpdate')
-          end,
-      },
-      {'williamboman/mason-lspconfig.nvim'}, -- Optional
-      }
-  }
+  use {'VonHeikemen/lsp-zero.nvim', branch = 'v2.x'}
+  use {'williamboman/mason.nvim'}
+  use {'neovim/nvim-lspconfig'}
+  use {'williamboman/mason-lspconfig.nvim'}
+  use {'simrat39/rust-tools.nvim'}
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"         -- The completion plugin
@@ -159,6 +148,9 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-path"         -- path completions
   use "hrsh7th/cmp-cmdline"      -- cmdline completions
   use "hrsh7th/cmp-nvim-lsp"     -- required by lsp
+  use 'hrsh7th/cmp-nvim-lua'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
+  use 'hrsh7th/cmp-vsnip'
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
 
   -- snippets
