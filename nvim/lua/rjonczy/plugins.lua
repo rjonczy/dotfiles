@@ -46,13 +46,13 @@ return require('packer').startup(function(use)
 
   -- My plugins comes below --
   use 'wbthomason/packer.nvim' -- Packer can manage itself 
-  use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim"  -- Useful lua functions used ny lots of plugins
+  use 'nvim-lua/popup.nvim'    -- An implementation of the Popup API from vim in Neovim
+  use 'nvim-lua/plenary.nvim'  -- Useful lua functions used ny lots of plugins
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- autopairs (integrates with cmp and treesitter)
   use {
-    "windwp/nvim-autopairs",
+    'windwp/nvim-autopairs',
     config = function()
       require("nvim-autopairs").setup {
 
@@ -70,7 +70,7 @@ return require('packer').startup(function(use)
 
   -- TODO comments
   use {
-    "folke/todo-comments.nvim",
+    'folke/todo-comments.nvim',
     requires = "nvim-lua/plenary.nvim",
     config = function()
       require("todo-comments").setup {
@@ -89,24 +89,21 @@ return require('packer').startup(function(use)
   }
 
   -- toggleterm
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  use {'akinsho/toggleterm.nvim', tag = '*', config = function()
     require("toggleterm").setup()
   end}
 
   -- color schemes
   use({ 'rose-pine/neovim', as = 'rose-pine' })
-
-  -- use { "catppuccin/nvim", as = "catppuccin" }
-  -- vim.cmd.colorscheme "catppuccin"
-
+  use { "catppuccin/nvim", as = "catppuccin" }
   use {'morhetz/gruvbox' }
-
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+  use 'lunarvim/colorschemes' -- A bunch of colorschemes you can try out
+  use 'lunarvim/darkplus.nvim'
   use 'folke/tokyonight.nvim'
 
-  use 'christoomey/vim-tmux-navigator'
 
+  -- for tmux/vim better navigation
+  use 'christoomey/vim-tmux-navigator'
 
   -- treesitter
   use {
@@ -142,19 +139,19 @@ return require('packer').startup(function(use)
   use {'simrat39/rust-tools.nvim'}
 
   -- cmp plugins
-  use "hrsh7th/nvim-cmp"         -- The completion plugin
-  use "hrsh7th/cmp-buffer"       -- buffer completions
-  use "hrsh7th/cmp-path"         -- path completions
-  use "hrsh7th/cmp-cmdline"      -- cmdline completions
-  use "hrsh7th/cmp-nvim-lsp"     -- required by lsp
+  use 'hrsh7th/nvim-cmp'         -- The completion plugin
+  use 'hrsh7th/cmp-buffer'       -- buffer completions
+  use 'hrsh7th/cmp-path'         -- path completions
+  use 'hrsh7th/cmp-cmdline'      -- cmdline completions
+  use 'hrsh7th/cmp-nvim-lsp'     -- required by lsp
   use 'hrsh7th/cmp-nvim-lua'
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
   use 'hrsh7th/cmp-vsnip'
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use 'saadparwaiz1/cmp_luasnip' -- snippet completions
 
   -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "L3MON4D3/LuaSnip"              --snippet engine
+  use "rafamadriz/friendly-snippets"  -- a bunch of snippets to use
 
 
   -- Useful plugin to show you pending keybinds.
