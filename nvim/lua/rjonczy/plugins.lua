@@ -123,19 +123,18 @@ return require('packer').startup(function(use)
 	  'theprimeagen/harpoon'
   }
 
+  -- git related plugins
   use {
 	  'mbbill/undotree'
   }
-
   use {
     'tpope/vim-fugitive'
   }
-
-
   use {
     'lewis6991/gitsigns.nvim'
   }
 
+  -- lsp related plugins
   use {'VonHeikemen/lsp-zero.nvim', branch = 'v2.x'}
   use {'williamboman/mason.nvim'}
   use {'neovim/nvim-lspconfig'}
@@ -177,8 +176,6 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-  -- status bar/line --
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
