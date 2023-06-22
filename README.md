@@ -74,6 +74,7 @@ Keymaps within `tmux`
 | \<leader\>\-w  | show windows | Windows |
 | \<leader\>\-?  | show all keybindings | help |
 | \<leader\>\-:  | enter the command line to type commands (use tab for completition)| commands |
+| \<leader\>\-[  | enter scrolling mode (use h/j/k/l or C-u / C-d for scrolling). `q` to quite scrolling mode | nagigation |
 
 ### (Neo)VIM
 
