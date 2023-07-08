@@ -34,6 +34,7 @@ Workspaces
 
 Legend:
 - \<leader\> - C-a 
+- C-a w -> means, Ctrl and 'a' together, followed by 'w'
 
 Commands
 | Command | Action |

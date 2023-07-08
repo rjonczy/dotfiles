@@ -48,15 +48,19 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Packer can manage itself 
   use 'nvim-lua/popup.nvim'    -- An implementation of the Popup API from vim in Neovim
   use 'nvim-lua/plenary.nvim'  -- Useful lua functions used ny lots of plugins
-  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+
+  -- bufferline (tabs with buffers)
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
 
   -- autopairs (integrates with cmp and treesitter)
   use {
     'windwp/nvim-autopairs',
     config = function()
-      require("nvim-autopairs").setup {
-
-      }
+      require("nvim-autopairs").setup {}
     end
   }
 
@@ -81,6 +85,8 @@ return require('packer').startup(function(use)
     end
   }
 
+
+
   -- telescope
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
@@ -88,15 +94,25 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+
+
   -- toggleterm
   use {'akinsho/toggleterm.nvim', tag = '*', config = function()
-    require("toggleterm").setup()
+    require('toggleterm').setup()
   end}
 
+
+
   -- color schemes
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use {'morhetz/gruvbox' }
+  use {
+    'rose-pine/neovim',
+    as = 'rose-pine'
+  }
+  use {
+    'catppuccin/nvim',
+    as = 'catppuccin'
+  }
+  use 'morhetz/gruvbox'
   use 'lunarvim/colorschemes' -- A bunch of colorschemes you can try out
   use 'lunarvim/darkplus.nvim'
   use 'folke/tokyonight.nvim'
@@ -105,20 +121,24 @@ return require('packer').startup(function(use)
   -- for tmux/vim better navigation
   use 'christoomey/vim-tmux-navigator'
 
+
+
   -- treesitter
   use {
-	  'nvim-treesitter/nvim-treesitter',
-	  run = ':TSUpdate'
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
   }
 
-  use {
-	  'nvim-treesitter/playground'
-  }
 
   -- pretty cool plugin from theprimeagen to switch between bookmarked files
   use {
 	  'theprimeagen/harpoon'
   }
+
+
 
   -- git related plugins
   use {
@@ -130,6 +150,8 @@ return require('packer').startup(function(use)
   use {
     'lewis6991/gitsigns.nvim'
   }
+
+
 
   -- lsp related plugins
   use {'VonHeikemen/lsp-zero.nvim', branch = 'v2.x'}
@@ -150,17 +172,17 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip' -- snippet completions
 
   -- snippets
-  use "L3MON4D3/LuaSnip"              --snippet engine
-  use "rafamadriz/friendly-snippets"  -- a bunch of snippets to use
+  use 'L3MON4D3/LuaSnip'              --snippet engine
+  use 'rafamadriz/friendly-snippets'  -- a bunch of snippets to use
 
 
   -- Useful plugin to show you pending keybinds.
   use {
-      "folke/which-key.nvim",
+      'folke/which-key.nvim',
       config = function()
           vim.o.timeout = true
           vim.o.timeoutlen = 300
-          require("which-key").setup {
+          require('which-key').setup {
               -- your configuration comes here
               -- or leave it empty to use the default settings
               -- refer to the configuration section below
