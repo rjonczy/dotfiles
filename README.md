@@ -99,6 +99,6 @@ Keymaps within `nvim`
 Harpoon
 | Keymap | Action |
 |---|---|
-| \<leader\> a | add buffer to list |
+| \<leader\>-a | add buffer to list |
 | C-e | toggle menu |
 | C-v/b/n/m | jump to buffer from list |
