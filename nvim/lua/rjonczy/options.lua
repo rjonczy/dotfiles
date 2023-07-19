@@ -28,7 +28,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 300                        -- faster completion (4000ms default)
 
-vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"
 
 -- :help options
 vim.opt.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard

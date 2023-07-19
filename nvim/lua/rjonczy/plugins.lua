@@ -134,9 +134,8 @@ return require('packer').startup(function(use)
 
 
   -- pretty cool plugin from theprimeagen to switch between bookmarked files
-  use {
-	  'theprimeagen/harpoon'
-  }
+  use { 'theprimeagen/harpoon' }
+  use { 'nvim-lua/plenary.nvim' }
 
 
 
