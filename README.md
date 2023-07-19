@@ -96,7 +96,7 @@ Keymaps within `nvim`
 | C\-w _ | max out height of window |
 | C\-w \| | max out weight of window |
 
-Harpoon
+[Harpoon](https://github.com/ThePrimeagen/harpoon)
 | Keymap | Action |
 |---|---|
 | \<leader\>-a | add buffer to list |
