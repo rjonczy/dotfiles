@@ -20,4 +20,4 @@ vim.keymap.set('n', '<leader>gb', builtin.git_branches, {})
 vim.keymap.set('n', '<leader>b',  builtin.buffers, {})
 vim.keymap.set('n', '<leader>ht', builtin.help_tags, {})
 
-
+vim.keymap.set("n", "<leader>td", ":TodoTelescope<CR>", {noremap=true})

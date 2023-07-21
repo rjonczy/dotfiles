@@ -85,6 +85,25 @@ return require('packer').startup(function(use)
     end
   }
 
+  use { 'numToStr/FTerm.nvim',
+    config = function()
+    local map = vim.api.nvim_set_keymap
+    local opts = { noremap = true, silent = true }
+
+    map('n', '<leader>tt', '<CMD>lua require("FTerm").toggle()<CR>', opts)
+    map('t', '<leader>tt', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', opts)
+    require 'FTerm'.setup({
+      blend = 18,
+      dimensions = {
+        height = 0.90,
+        width = 0.90,
+        x = 0.5,
+        y = 0.5
+      }
+    })
+    end
+  }
+
 
 
   -- telescope
