@@ -49,6 +49,8 @@ return require('packer').startup(function(use)
   use 'nvim-lua/popup.nvim'    -- An implementation of the Popup API from vim in Neovim
   use 'nvim-lua/plenary.nvim'  -- Useful lua functions used ny lots of plugins
 
+  use 'towolf/vim-helm'
+
   -- bufferline (tabs with buffers)
   use {
     'akinsho/bufferline.nvim',
@@ -154,20 +156,14 @@ return require('packer').startup(function(use)
 
   -- pretty cool plugin from theprimeagen to switch between bookmarked files
   use { 'theprimeagen/harpoon' }
-  use { 'nvim-lua/plenary.nvim' }
 
 
 
   -- git related plugins
-  use {
-	  'mbbill/undotree'
-  }
-  use {
-    'tpope/vim-fugitive'
-  }
-  use {
-    'lewis6991/gitsigns.nvim'
-  }
+  use 'mbbill/undotree'
+  use 'tpope/vim-fugitive'
+  use 'lewis6991/gitsigns.nvim'
+  use 'f-person/git-blame.nvim'
 
 
 
