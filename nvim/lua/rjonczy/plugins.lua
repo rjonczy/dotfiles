@@ -51,6 +51,9 @@ return require('packer').startup(function(use)
 
   use 'towolf/vim-helm'
 
+  -- symbols browser
+  use 'simrat39/symbols-outline.nvim'
+
   -- bufferline (tabs with buffers)
   use {
     'akinsho/bufferline.nvim',
