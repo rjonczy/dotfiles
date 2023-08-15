@@ -47,6 +47,7 @@ vim.opt.splitright = true                       -- force all vertical splits to 
 vim.opt.timeoutlen = 1000                       -- time to wait for a mapped sequence to complete (in milliseconds)
 vim.opt.writebackup = false                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 vim.opt.cursorline = true                       -- highlight the current line
+vim.opt.cursorcolumn = true                       -- highlight the current line
 vim.opt.numberwidth = 4                         -- set number column width to 2 {default 4}
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
